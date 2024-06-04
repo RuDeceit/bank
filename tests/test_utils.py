@@ -1,5 +1,5 @@
 from src.utils import formatted_date, mask_card, load_operations_json
-
+import os
 
 def test_formatted_date():
     assert formatted_date('2018-04-14T19:35:28.978265') == '14.04.2018'
@@ -12,6 +12,7 @@ def test_mask_card():
 
 
 def test_load_operations_json():
+    print("Current working directory:", os.getcwd())
     expected_operation_first = {
         "id": 441945886,
         "state": "EXECUTED",
