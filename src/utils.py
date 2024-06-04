@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 def load_operations_json():
-    with open('..\operations.json', 'r', encoding='utf-8') as file:
+    with open('..\\operations.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
         list_operations = []
         for item in data:
