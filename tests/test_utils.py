@@ -9,4 +9,4 @@ def test_formatted_date():
 
 def test_mask_card():
     assert mask_card('Visa Gold 7305799447374042') == 'Visa Gold 7305 79** **** 4042'
-    assert mask_card('Счет 90562872508279542248') == 'Счет **2278'
+    assert mask_card('Счет 90562872508279542248') == 'Счет **2248'
