@@ -4,6 +4,9 @@ from utils import mask_card
 
 
 def main():
+    """
+    Основная функция для отображения последних пяти операций
+    """
     sorted_operations = sort_operations()
     for operation in sorted_operations:
         operation_amount = operation["operationAmount"]["amount"]
