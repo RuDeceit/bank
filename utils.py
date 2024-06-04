@@ -31,7 +31,3 @@ def formatted_date(date):
     iso_date_str = date
     date_obj = datetime.fromisoformat(iso_date_str)
     return date_obj.strftime('%d.%m.%Y')
-
-
-# print(formatted_date('2018-04-16T17:34:19.241289'))
-# print(mask_card('Visa Classic 2842878893689012'))
