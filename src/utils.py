@@ -6,7 +6,7 @@ def load_operations_json():
     """
     Загрузка операция через json файл, возвращает список операций
     """
-    with open('..\\operations.json', 'r', encoding='utf-8') as file:
+    with open('C:/Users/User/kursovaya/operations.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
         list_operations = []
         for item in data:
